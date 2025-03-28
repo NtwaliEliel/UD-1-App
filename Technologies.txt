@@ -1,0 +1,44 @@
+Frontend Framework:
+
+React: A JavaScript library for building user interfaces.
+React Router: For handling routing in the application.
+TypeScript:
+
+TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+Build Tool:
+
+Vite: A fast build tool and development server.
+Styling:
+
+Tailwind CSS: A utility-first CSS framework.
+PostCSS: A tool for transforming CSS with JavaScript plugins.
+Autoprefixer: A PostCSS plugin to parse CSS and add vendor prefixes.
+Linting:
+
+ESLint: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+TypeScript ESLint: Integrates ESLint with TypeScript.
+ESLint Plugins:
+eslint-plugin-react-hooks: Enforces rules of hooks.
+eslint-plugin-react-refresh: Ensures fast refresh works correctly.
+Firebase:
+
+Firebase Authentication: For user authentication.
+Firebase Firestore: For storing and syncing data.
+Supabase:
+
+Supabase: An open-source Firebase alternative providing backend services.
+Icons:
+
+Lucide React: A collection of simple and consistent icons.
+Configuration Files:
+
+.env: For environment variables.
+tsconfig.json: TypeScript configuration.
+eslint.config.js: ESLint configuration.
+vite.config.ts: Vite configuration.
+tailwind.config.js: Tailwind CSS configuration.
+postcss.config.js: PostCSS configuration.
+Version Control:
+
+.gitignore: Specifies files to be ignored by Git.
+These technologies together provide a robust setup for developing a modern web application with a focus on performance, scalability, and maintainability.
