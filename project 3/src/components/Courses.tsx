@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../lib/firebase';
 import { collection, getDocs, addDoc } from 'firebase/firestore';
 import { useAuth } from '../contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 interface Course {
   id: string;
@@ -12,6 +13,7 @@ interface Course {
 
 export function Courses() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [courses, setCourses] = useState<Course[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -36,7 +38,7 @@ export function Courses() {
 
   const handleEnroll = async (courseId: string) => {
     if (!user) {
-      alert('You must be logged in to enroll in a course.');
+      navigate('/login');
       return;
     }
 
