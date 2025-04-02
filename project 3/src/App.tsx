@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './components/Home';
 import { Courses } from './components/Courses';
+import CourseContent from './components/CourseContent';
 import { Jobs } from './components/Jobs';
 import { Community } from './components/Community';
 import Login from './components/Login';
@@ -21,6 +22,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/courses" element={<Courses />} />
+              <Route path="/courses/:courseId" element={<CourseContent />} />
               <Route path="/jobs" element={<Jobs />} />
               <Route path="/community" element={<Community />} />
               <Route path="/login" element={<Login />} />
